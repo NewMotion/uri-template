@@ -1,3 +1,5 @@
+# uri-template [![Build Status](https://travis-ci.org/NewMotion/uri-template.png?branch=master)](https://travis-ci.org/NewMotion/uri-template)
+
 URI Template
 =============
 Complete implementation of [RFC-6570 (uri-templates)](http://tools.ietf.org/html/rfc6570) in Scala
@@ -20,12 +22,4 @@ Dependencies
 
 SBT:
 	
-	libraryDependencies += "no.arktekk" %% "uri-template" % "1.1"
-
-Maven:
-
-	<dependency>
-	  <groupId>no.arktekk</groupId>
-	  <artifactId>uri-template_${scalaVersion}</artifactId>
-	  <version>1.1</version>
-	</dependency>
+	libraryDependencies += "com.newmotion" %% "uri-template" % "1.0.3-SNAPSHOT"

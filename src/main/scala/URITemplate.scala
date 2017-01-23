@@ -4,7 +4,7 @@ object Syntax extends Syntax
 
 trait Syntax {
   import scala.language.implicitConversions
-  implicit def varString(s:String) = Var(s)
+  implicit def varString(s:String): Var = Var(s)
 }
 
 case class Var(s:String){

@@ -1,10 +1,5 @@
-// IDEA plugin
-resolvers += "sbt-idea-repo" at "http://mpeltonen.github.com/maven/"
+resolvers += "TNM" at "http://nexus.thenewmotion.com/content/groups/public"
 
-addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.6.0")
+addSbtPlugin("com.thenewmotion" % "sbt-build-seed" % "2.1.0")
 
-//addSbtPlugin("no.arktekk.sbt" % "aether-deploy" % "0.9")
-
-resolvers += Resolver.url("sbt-plugin-releases", new URL("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
-
-addSbtPlugin("com.typesafe.sbt" % "sbt-pgp" % "0.8.3")
+addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.3")
