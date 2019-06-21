@@ -76,7 +76,7 @@ sealed trait Lit extends Expansion {
 }
 case class Encoded(expanded:String) extends Lit
 case class Unencoded(char:Char) extends Lit {
-  def expanded = "%" + char.intValue().toHexString.toUpperCase
+  def expanded = "%" + char.toInt.toHexString.toUpperCase
 }
 
 case class VarSpec(name: String, modifier: Option[Modifier])
