@@ -6,6 +6,10 @@ name         := "uri-template"
 
 description  := "URI Template"
 
+scalaVersion := tnm.ScalaVersion.prev
+
+crossScalaVersions := Seq(tnm.ScalaVersion.aged, tnm.ScalaVersion.curr, tnm.ScalaVersion.prev)
+
 libraryDependencies ++= {
   Seq(
     "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2",
